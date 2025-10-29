@@ -4,39 +4,318 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
-    <title>Klinik kecantikan | Panduan Ahli untuk Kesehatan Optimal</title> 
-    <meta name="description" content="Sumber tepercaya untuk Gizi, Keseimbangan Hormon, dan Menopause pada wanita usia 30+. Dibuat dan direview oleh Ahli Gizi Berlisensi. Dapatkan solusi ilmiah yang teruji.">
+    <title>Klinik Kecantikan Ahli | Solusi Kesehatan Wanita 30+</title> 
+    <meta name="description" content="Panduan ahli untuk klinik kecantikan wanita usia 30+. Temukan solusi ilmiah untuk perimenopause, kelelahan kronis, dan manajemen berat badan yang terverifikasi oleh ahli gizi.">
     
-    <meta name="author" content="Nama Ahli Gizi / Tim Redaksi">
-    <meta name="keywords" content="gizi wanita 30+, keseimbangan hormon, menopause, diet perimenopause, kesehatan wanita, suplemen hormon, nutrisi ahli">
+    <meta name="author" content="Tim Ahli Kesehatan Nuzanthra">
+    <meta name="keywords" content="klinik kecantikan wanita 30+, solusi kecantikan perimenopause, penanganan kelelahan kronis, program diet klinik kecantikan, ahli gizi untuk kulit, klinik kecantikan berbasis sains, kesehatan wanita pontianak">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Klinik Kecantikan Ahli | Solusi Kesehatan Wanita 30+">
+    <meta property="og:description" content="Panduan ahli untuk klinik kecantikan wanita usia 30+. Temukan solusi ilmiah untuk perimenopause, kelelahan kronis, dan manajemen berat badan.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nuzanthra.biz.id/">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.nuzanthra.biz.id/" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     
     <style>
-        /* Gaya tetap seperti contoh, bisa diabaikan untuk fokus SEO */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding: 50px; background: #f0f0f0; }
-        h1 { color: #007bff; } /* Warna lebih 'kesehatan' */
-        p { color: #555; max-width: 700px; margin: 20px auto; line-height: 1.6; }
-        a { color: #28a745; text-decoration: none; font-weight: bold; }
+        :root {
+            --primary-color: #007BFF; /* Biru yang menenangkan dan profesional */
+            --secondary-color: #28a745; /* Hijau untuk kesehatan dan kepercayaan */
+            --dark-color: #2c3e50;
+            --light-bg: #f8f9fa;
+            --text-color: #495057;
+            --heading-font: 'Poppins', sans-serif;
+            --body-font: 'Montserrat', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--body-font);
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        h1, h2, h3 {
+            font-family: var(--heading-font);
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Header & Hero Section --- */
+        .hero {
+            background: linear-gradient(135deg, rgba(0, 123, 255, 0.9), rgba(40, 167, 69, 0.8)), url('https://images.unsplash.com/photo-1570172619644-dfd8ed534e0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* --- Main Content --- */
+        main {
+            padding: 60px 0;
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        .section p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .section strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* --- Solution Cards --- */
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .solution-card {
+            background-color: var(--light-bg);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 5px solid var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .solution-card h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        /* --- Articles Section --- */
+        .articles-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .articles-list li {
+            background: var(--light-bg);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .articles-list li:hover {
+            background-color: #e9ecef;
+        }
+
+        .articles-list a {
+            color: var(--dark-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-family: var(--heading-font);
+            font-size: 1.1rem;
+        }
+
+        .articles-list a:hover {
+            color: var(--primary-color);
+        }
+
+        /* --- CTA Section --- */
+        .cta {
+            text-align: center;
+            padding: 40px;
+            background-color: var(--dark-color);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .cta h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta h2::after {
+            background-color: var(--secondary-color);
+        }
+
+        .cta p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: var(--heading-font);
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--light-bg);
+            border-top: 1px solid #dee2e6;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .solutions-grid { grid-template-columns: 1fr; }
+            .section { padding: 25px; }
+        }
     </style>
 </head>
 <body>
-    
-    <h1>Panduan Lengkap kecantikan dan kesehatan+</h1>
-    
-    <p>
-        Selamat datang di Klinik kecantikan, sumber informasi kesehatan yang **berfokus spesifik** pada **kecantikan** dan **kesehatan** untuk wanita di atas 30 tahun. 
-        <br>
-        Konten kami **disusun dan diverifikasi oleh Ahli Gizi Berlisensi** untuk memastikan Anda mendapatkan **solusi yang akurat dan berbasis sains** untuk mengatasi perubahan **perimenopause**, **kelelahan kronis**, dan **berat badan** yang sulit turun.
-    </p>
-    
-    <p>
-        <a href="https://www.nuzanthra.biz.id/2025/10/mencari-klinik-terdekat-di-pontianak.html">Pelajari Lebih Lanjut tentang Otoritas Kami</a> | 
-        <a href="https://www.nuzanthra.biz.id/2025/10/klinik-kecantikan-pontianak-terbaik.html">Baca Artikel Terbaru: klinik kecantikan pontianak</a>
-    </p>
-    
-    <p style="margin-top: 20px; font-size: 0.9em;">
-        Dapatkan tips gizi harian dan konsultasi kesehatan terpercaya dari <a href="https://www.nuzanthra.biz.id/" target="_blank" title="Kunjungi Nuzanthra untuk informasi kesehatan terkini">Pakar Kesehatan Nuzanthra</a>.
-    </p>
-    
-    <p style="margin-top: 40px;">Dibuat dengan dedikasi untuk kesehatan wanita.</p>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Temukan Kembali Kecantikan & Vitalitas Anda di Usia 30+</h1>
+            <p>Solusi kecantikan berbasis sains untuk mengatasi perimenopause, kelelahan, dan tantangan berat badan yang sulit diatasi.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            
+            <section class="section">
+                <h2>Panduan Ahli Kesehatan Wanita</h2>
+                <p>
+                    Selamat datang di sumber informasi kesehatan yang <strong>berfokus spesifik</strong> pada kecantikan dan kesehatan untuk <strong>wanita di atas 30 tahun</strong>. Konten kami <strong>disusun dan diverifikasi oleh Ahli Gizi Berlisensi</strong> untuk memastikan Anda mendapatkan <strong>solusi yang akurat dan berbasis sains</strong>.
+                </p>
+                <p>
+                    Kami memahami tantangan unik yang Anda hadapi, mulai dari perubahan <strong>perimenopause</strong>, <strong>kelelahan kronis</strong>, hingga <strong>berat badan</strong> yang sulit turun. Di sinilah kami hadir untuk memberikan panduan yang tepercaya.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>Solusi Berbasis Bukti Kami</h2>
+                <div class="solutions-grid">
+                    <div class="solution-card">
+                        <h3>Keseimbangan Hormon</h3>
+                        <p>Panduan lengkap untuk mengelola gejala perimenopause dengan nutrisi dan gaya hidup yang tepat.</p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Energi Optimal</h3>
+                        <p>Strategi ilmiah untuk mengatasi kelelahan kronis dan mendapatkan kembali vitalitas Anda.</p>
+                    </div>
+                    <div class="solution-card">
+                        <h3>Manajemen Berat Badan</h3>
+                        <p>Program diet yang disesuaikan untuk metabolisme wanita 30+ agar berat badan ideal tercapai.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Panduan Ahli Kami</h2>
+                <p>Baca artikel mendalam dari para ahli kami untuk memulai perjalanan kesehatan Anda.</p>
+                <ul class="articles-list">
+                    <li><a href="https://www.nuzanthra.biz.id/2025/10/mencari-klinik-terdekat-di-pontianak.html" target="_blank">Mencari Klinik Terdekat di Pontianak: Pilihan Tepat untuk Kesehatan Anda</a></li>
+                    <li><a href="https://www.nuzanthra.biz.id/2025/10/klinik-kecantikan-pontianak-terbaik.html" target="_blank">Klinik Kecantikan Pontianak Terbaik untuk Perawatan Estetika Modern</a></li>
+                </ul>
+            </section>
+
+            <section class="cta">
+                <h2>Siap untuk Memulai Perubahan?</h2>
+                <p>Pelajari panduan lengkap kami dan temukan solusi yang tepat untuk Anda.</p>
+                <a href="https://www.nuzanthra.biz.id/" class="btn" target="_blank">Konsultasi dengan Pakar Kesehatan</a>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Dapatkan tips gizi harian dan konsultasi kesehatan terpercaya dari <a href="https://www.nuzanthra.biz.id/" target="_blank" title="Kunjungi Nuzanthra untuk informasi kesehatan terkini">Pakar Kesehatan Nuzanthra</a>.</p>
+            <p style="margin-top: 10px;">Dibuat dengan dedikasi untuk kesehatan wanita.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
